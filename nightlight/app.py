@@ -1,6 +1,6 @@
-import time
-from grove.grove_light_sensor_v1_2 import GroveLightSensor
-from grove.grove_led import GroveLed
+from time import sleep
+from grove.grove_light_sensor_v1_2 import GroveLightSensor # type: ignore
+from grove.grove_led import GroveLed # type: ignore
 
 
 light_sensor = GroveLightSensor(0)
@@ -15,5 +15,4 @@ while True:
     else:
         led.off()
     
-    time.sleep(1)
-
+    sleep(1)
